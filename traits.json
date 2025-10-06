@@ -1,0 +1,214 @@
+{
+  "traits": [
+    {
+      "id": "agility",
+      "name": "Agility",
+      "description": "Nimbleness, dexterity, and overall physical coordination of muscles and reflexes.",
+      "parent": ""
+    },
+    {
+      "id": "smarts",
+      "name": "Smarts",
+      "description": "Raw intellect, perception, and ability to sort and make use of complex information.",
+      "parent": ""
+    },
+    {
+      "id": "spirit",
+      "name": "Spirit",
+      "description": "Inner strength and willpower.",
+      "parent": ""
+    },
+    {
+      "id": "strength",
+      "name": "Strength",
+      "description": "Raw muscle power.",
+      "parent": ""
+    },
+    {
+      "id": "vigor",
+      "name": "Vigor",
+      "description": "Endurance, health, and constitution.",
+      "parent": ""
+    },
+    {
+      "id": "academics",
+      "name": "Academics",
+      "description": "Knowledge of liberal arts, social sciences, literature, history, etc.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "athletics",
+      "name": "Athletics",
+      "description": "Overall athletic coordination and ability. Climbing, jumping, balancing, wrestling, skiing, swimming, throwing, or catching.",
+      "parent": "Agility"
+    },
+    {
+      "id": "battle",
+      "name": "Battle",
+      "description": "Strategy, tactics, and understanding military operations. A key skill in Mass Battles.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "boating",
+      "name": "Boating",
+      "description": "Ability to sail or pilot a boat, ship, or other watercraft.",
+      "parent": "Agility"
+    },
+    {
+      "id": "common_knowledge",
+      "name": "Common Knowledge",
+      "description": "General knowledge of a character’s world.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "driving",
+      "name": "Driving",
+      "description": "The ability to control, steer, and operate ground vehicles.",
+      "parent": "Agility"
+    },
+    {
+      "id": "faith",
+      "name": "Faith",
+      "description": "The arcane skill for Arcane Background (Miracles).",
+      "parent": "Spirit"
+    },
+    {
+      "id": "fighting",
+      "name": "Fighting",
+      "description": "Skill in armed and unarmed combat.",
+      "parent": "Agility"
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "description": "The arcane skill for Arcane Background (Gifted).",
+      "parent": "Spirit"
+    },
+    {
+      "id": "gambling",
+      "name": "Gambling",
+      "description": "Skill and familiarity with games of chance.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "healing",
+      "name": "Healing",
+      "description": "The ability to treat and heal Wounds and diseases, and decipher forensic evidence.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "intimidation",
+      "name": "Intimidation",
+      "description": "A character’s ability to threaten others into doing what she wants.",
+      "parent": "Spirit"
+    },
+    {
+      "id": "language",
+      "name": "Language",
+      "description": "Knowledge and fluency in a particular language.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "notice",
+      "name": "Notice",
+      "description": "General awareness and perception.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "occult",
+      "name": "Occult",
+      "description": "Knowledge of supernatural events, creatures, history, and ways.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "performance",
+      "name": "Performance",
+      "description": "Singing, dancing, acting, or other forms of public expression.",
+      "parent": "Spirit"
+    },
+    {
+      "id": "persuasion",
+      "name": "Persuasion",
+      "description": "The ability to convince others to do what you want.",
+      "parent": "Spirit"
+    },
+    {
+      "id": "piloting",
+      "name": "Piloting",
+      "description": "Skill with maneuvering vehicles that operate in three dimensions, such as airplanes, helicopters, spaceships, etc.",
+      "parent": "Agility"
+    },
+    {
+      "id": "repair",
+      "name": "Repair",
+      "description": "The ability to fix mechanical and electrical gadgets.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "description": "Finding written information from various sources.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "riding",
+      "name": "Riding",
+      "description": "A character’s skill in mounting, controlling, and riding a tamed beast.",
+      "parent": "Agility"
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "description": "Knowledge of scientific fields such as biology, chemistry, geology, engineering, etc.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "shooting",
+      "name": "Shooting",
+      "description": "Precision with any type of ranged weapon.",
+      "parent": "Agility"
+    },
+    {
+      "id": "spellcasting",
+      "name": "Spellcasting",
+      "description": "The arcane skill for Arcane Background (Magic).",
+      "parent": "Smarts"
+    },
+    {
+      "id": "stealth",
+      "name": "Stealth",
+      "description": "The ability to sneak and hide.",
+      "parent": "Agility"
+    },
+    {
+      "id": "survival",
+      "name": "Survival",
+      "description": "How to find food, water, or shelter, and tracking.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "taunt",
+      "name": "Taunt",
+      "description": "Insulting or belittling another. Almost always done as a Test",
+      "parent": "Smarts"
+    },
+    {
+      "id": "thievery",
+      "name": "Thievery",
+      "description": "Sleight of hand, pickpocketing, lockpicking, and other typically shady feats.",
+      "parent": "Agility"
+    },
+        {
+      "id": "trade",
+      "name": "Trade",
+      "description": "Trade (x) is for day-to-day tasks needed to run a business (blacksmith, saloon owner, miner, etc.). Note the specific trade in parentheses. Trade lets an entrepreneur raise funds (as the Performance skill in <em>Savage Worlds</em>) through advertising, money-saving tactics, and buying cheaper goods.",
+      "parent": "Smarts"
+    },
+    {
+      "id": "weird_science",
+      "name": "Weird Science",
+      "description": "The arcane skill for Arcane Background (Weird Science).",
+      "parent": "Smarts"
+    }
+  ]
+}

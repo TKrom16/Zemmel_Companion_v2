@@ -1,0 +1,539 @@
+{"hindrances": [
+    {
+      "id": "ailin'",
+      "name": "Ailin'",
+      "summary": "You have a chronic incurable disease. Penalties for resisting fatigue. Might become sicker.",
+      "description": "Medicine is a rudimentary science on the frontier, and there are worse ways to die than a severe case of lead poisoning. Your cowpoke suffers from a chronic and at least so far incurable disease of some sort. \n\nThe Minor version of the Hindrance means you subtract 1 from any roll made to resist Fatigue from any source. Subtract 2 if it’s a Major Hindrance. \n\nA Critical Failure on such a roll means things are getting worse. If your pistolero has the Minor version, she gets worse and her Hindrance becomes Major. If she already has the Major version, the Reaper comes calling. The good news is you gain an immediate point of Conviction. The bad news is you choose when and how your hero dies during that session. She might go out in a blaze of glory or surrounded by friends on a peaceful mountaintop. \n\nWhen your character finally passes, the other player characters gain a point of Conviction, drawing strength from the brave death of their stalwart companion. \n\nYou can also buy off your Hindrance by spending an Advance (two for the Major version of the Hindrance). You should work with the Marshal to figure out a narrative reason for the improvement—treatment at a sanatorium, a miracle cure, a transfusion from a unique donor, or some other story based explanation for the character’s miraculous improvement.",
+      "type": "Minor/Major",
+      "source": "Deadlands"
+    },
+    {
+      "id": "all_thumbs",
+      "name": "All Thumbs",
+      "summary": "-2 when using mechanical or electrical devices. Critical Failures break the device.",
+      "description": "Due to upbringing, lack of exposure, or pure bad luck, some individuals are “all thumbs” when it comes to mechanical or technological devices. \n\nAll Thumbs inflicts a −2 penalty when using mechanical or electrical devices. If he rolls a Critical Failure while using such a device (and it doesn’t already have a built-in effect), it’s broken. If the GM feels it’s appropriate, it can be fixed with a Repair roll and 1d6 hours.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "anemic",
+      "name": "Anemic",
+      "summary": "-2 to Vigor rolls to resist Fatigue.",
+      "description": "Anemic characters are particularly susceptible to sickness, disease, environmental effects, and fatigue. They subtract 2 from Vigor rolls made to resist Fatigue (see <strong>Hazards</strong>, starting on page 125 <em>SWADE</em>).",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "arrogant",
+      "name": "Arrogant",
+      "summary": "Likes to dominate his opponent, challenge the most powerful foe in combat.",
+      "description": "Your hero doesn’t think he’s the best—he knows he is. Whether it’s swordsmanship, kung fu, or painting, few compare to his skills and he flaunts it every chance he gets. \n\nWinning isn’t enough for this champion. He wants to dominate his opponent and prove there’s no one better. He’s the kind of fighter who disarms an opponent in a duel just to pick the sword up and hand it back with a smirk. Arrogant individuals look for the greatest threat in battle, hacking their way through lesser minions only because they’re in the way.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "bad_eyes",
+      "name": "Bad Eyes",
+      "summary": "–1 to all Trait rolls dependent on vision, or –2 as a Major Hindrance. Eyewear negates penalty but have a 50% chance of breaking when the hero suffers trauma.",
+      "description": "Your hero’s eyes aren’t what they used to be. He suffers a −1 penalty to any Trait roll dependent on vision (such as ranged attacks and Notice rolls) or −2 as a Major Hindrance. \n\nIn settings where glasses are available, they negate the penalty when worn. If lost or broken during a combat (generally a 50% chance when he’s Wounded, falls, or suffers some other trauma), the character is Distracted (and Vulnerable if a Major Hindrance) until the end of their next turn.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "bad_luck",
+      "name": "Bad Luck",
+      "summary": "The character starts with one less Benny per session.",
+      "description": "Your hero is a little less lucky than most. He gets one less Benny per game session than normal. A character cannot have both Bad Luck and the Luck Edge.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "big_mouth",
+      "name": "Big Mouth",
+      "summary": "Unable to keep secrets and constantly gives away private information.",
+      "description": "Loose lips sink ships, the saying goes. This hero’s mouth could drown an armada. \n\nThe blabbermouth can’t keep a secret very well. He reveals plans and gives away things best kept among friends, usually at the worst possible times.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "blind",
+      "name": "Blind",
+      "summary": "–6 to all tasks that require vision (but choice of a free Edge to offset).",
+      "description": "The individual is completely without sight. He suffers a −6 to all physical tasks that require vision (GM’s call). On the plus side, Blind characters gain their choice of a free Edge to compensate for this particularly difficult Hindrance.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "bloodthirsty",
+      "name": "Bloodthirsty",
+      "summary": "Never takes prisoners.",
+      "description": "Your hero never takes prisoners unless under the direct supervision of a superior. His cold-blooded ruthlessness causes enemies to respond in kind, often costs vital information, creates constant enemies, and may get him in trouble with his superiors or the authorities, depending on the setting.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "can’t_swim",
+      "name": "Can’t Swim",
+      "summary": "–2 to swimming (Athletics) rolls; swimming Pace is slower.",
+      "description": "Most people in the 21st century can swim thanks to swimming pools, easy travel to lakes and beaches, or educational efforts. Historically, however, those who weren’t raised around a temperate body of water could not. \n\nCharacters with this Hindrance suffer a −2 penalty to the Athletics skill when swimming and each inch moved in water costs 3″ of Pace. See <strong>Movement</strong> (page 92 <em>SWADE</em>) for more details and Drowning (page 126).",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "cautious",
+      "name": "Cautious",
+      "summary": "' The character plans extensively and/or is overly careful.",
+      "description": "This planner personifies restraint and carefulness. He never makes rash decisions and likes to plot things out in detail long before any action is taken.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "clueless",
+      "name": "Clueless",
+      "summary": "–2 to Common Knowledge and Notice rolls.",
+      "description": "Your hero doesn’t pay much attention to the world around him and can’t seem to find a haystack in a small pile of needles. He suffers a −2 penalty to Common Knowledge and Notice rolls.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "clumsy",
+      "name": "Clumsy",
+      "summary": "–2 to Athletics and Stealth rolls.",
+      "description": "Your hero is an uncoordinated klutz who trips over air and is always the last one picked for sports. He subtracts 2 from Athletics and Stealth rolls.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "code_of_honor",
+      "name": "Code of Honor",
+      "summary": "The character keeps his word and acts like a gentleman.",
+      "description": "Honor is very important to your character. He keeps his word, doesn’t abuse or kill prisoners, and generally tries to operate within his world’s particular notion of proper gentlemanly or ladylike behavior",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "curious",
+      "name": "Curious",
+      "summary": "The character wants to know about everything.",
+      "description": "It killed the cat, and it might kill your warrior as well. Curious characters have to check out everything and always want to know what’s behind a potential mystery or secret.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "cursed",
+      "name": "Cursed",
+      "summary": "The GM starts with an extra benny.",
+      "description": "Everybody’s got skeletons in the closet, but yours are trying to claw their way out! Your hero has done somebody wrong, either through past affiliation or dark, unspoken deeds. \n\nWhile most folk don’t know or care, the Fella Upstairs sure does—and he ain’t too pleased. For each player character with the Cursed Hindrance, the GM starts with one additional Benny!",
+      "type": "Major",
+      "source": "Deadlands"
+    },
+    {
+      "id": "death_wish",
+      "name": "Death Wish",
+      "summary": "The hero wants to die after or while completing some epic task.",
+      "description": "Having a death wish doesn’t mean your adventurer is suicidal—he might just think his life is worth less than some noble but clearly deadly goal. \n\nThose with a Death Wish don’t throw their lives away for no reason, but when there’s a chance to complete a goal they do anything—and take any risk—to achieve it.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "delusional",
+      "name": "Delusional",
+      "summary": "The individual believes something strange that causes him occasional or frequent trouble.",
+      "description": "Your hero believes something that is considered quite strange by everyone else. Minor Delusions are harmless or the character generally keeps it to himself (the government puts sedatives in soft drinks, dogs can talk, we’re all just characters in some bizarre game, etc.). \n\nWith a Major Delusion, he expresses his view on the situation frequently and it can occasionally lead to danger (the government is run by aliens, hospitals are deadly, I’m allergic to armor, zombies are my friends).",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "doubting_thomas",
+      "name": "Doubting Thomas",
+      "summary": "The character doesn’t believe in the supernatural, often exposing him to unnecessary risks.",
+      "description": "Some people don’t believe in the supernatural until they’re halfway down some creature’s gullet. Doubting Thomases are skeptics who try their best to rationalize supernatural events. They walk right into danger they don’t believe in and look for alternate explanations to every supernatural event. \n\nEven after being confronted with undeniable truth, the doubter’s mind eventually begins to doubt what he saw, rationalizes it away, or compartmentalizes the event as “one of a kind” while continuing to doubt the next mystery.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "driven",
+      "name": "Driven",
+      "summary": "The hero’s actions are driven by some important goal or belief.",
+      "description": "A vow is a commitment to others. Driven characters want something for themselves. It may be to protect the realm, become a decorated officer, prove you’re the best gladiator in Rome, or the best pilot in the galactic fleet. \n\nThe Minor version shapes the character and pushes his decisions but either happens rarely or is fairly harmless. As a Major Hindrance it’s an overriding desire that comes up frequently or causes peril for the heroine and those around her.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "elderly",
+      "name": "Elderly",
+      "summary": "Pace –1, Agility, Strength, and Vigor rolls –1, but hero gets 5 extra skill points.",
+      "description": "Your adventurer is getting on in years, but he’s not quite ready for the nursing home yet. His Pace is reduced by 1, and he subtracts 1 from running rolls (minimum 1). He also suffers a −1 penalty to Agility, Strength, and Vigor rolls, but not their linked skills. \n\nOn the plus side, the wisdom of his years grants the hero 5 extra skill points which may be used for any skills linked to Smarts.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "enemy",
+      "name": "Enemy",
+      "summary": "The character has a recurring nemesis.",
+      "description": "Someone out there hates the character and wants him ruined, locked away, or dead. The value of the Hindrance depends on how powerful the enemy is and how often he might show up. A Minor Enemy might be a lone gunslinger out for vengeance or a betrayed brotherhood that’s deadly but appears rarely. A Major Enemy might represent powerful authorities, a band of outlaws, or a single very powerful and relentless rival. \n\nIf the enemy is one day defeated, the GM should gradually work in a replacement, or the hero may buy off the Hindrance by sacrificing an Advance.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "greedy",
+      "name": "Greedy",
+      "summary": "The individual is obsessed with wealth and material possessions.",
+      "description": "A miser measures worth in material possessions or wealth. If a Minor Hindrance, he argues bitterly for more than his fair share of any loot or reward the party might come across. As a Major Hindrance, he fights over anything he considers unfair, and may even kill for it if he feels slighted or covets something he cannot have.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "grim_servant_o'_death",
+      "name": "Grim Servant O' Death",
+      "summary": "Your hero is a serial killer. +1 to every damage roll, but Critical Failures hit allies.",
+      "description": "Only Wild Cards can take this Hindrance, and you shouldn’t do it lightly, amigo. Your hero’s a killer. His family’s probably pushing up daisies, his enemies are worm food, and even a few of his friends have holes in them that are suspiciously the same caliber as his very own shootin’ iron. \n\nThe good news is your hombre adds +1 to every damage roll he ever makes, whether it’s from Fighting, Shooting, an arcane skill roll, or even using Athletics to throw things at people in a most inhospitable manner. \n\nThe downside is your malcontent winds up in the hoosegow or on the run from his enemies a lot. Worse, anytime his attack roll is a Critical Failure, he hits the nearest ally in sight with a raise! This happens whether the target’s in the line of fire or not. Maybe the killer’s gun hand gets jostled, the bullet ricochets, or he catches flying shrapnel from an explosion. Other players’ characters are always first choice, but any friendly soul will do in a pinch. \n\nEven hand-to-hand attacks hit allies when a Grim Servant o’ Death gets violent. This may require a little imagination, but either the weapon flies out of the hero’s hand and strikes his friend, or the hero moves adjacent to his erstwhile comrade and “accidentally” whacks him. Even if you’re using miniatures, combat is more fluid than the tabletop depicts.",
+      "type": "Major",
+      "source": "Deadlands"
+    },
+    {
+      "id": "habit",
+      "name": "Habit",
+      "summary": "Addicted to something, suffers Fatigue if deprived.",
+      "description": "Your warrior has an annoying or dangerous compulsion. A Minor Habit irritates those around her but isn’t dangerous. Maybe she picks her nose, can’t stop fiddling with her phone, says “y’know” in the middle of every sentence, or chews and smacks her gum loudly and often. Allies avoid her if possible. \n\nA Major Habit is a physical or mental addiction of some sort that is debilitating or possibly even deadly. This includes drug use, chronic drinking, or perhaps even an addiction to virtual reality in a high-tech setting. \n\nAn addict who doesn’t get his fix must make a Vigor roll every 24 hours he goes without or take a level of <strong>Fatigue</strong> (see page 100 <em>SWADE</em>). \nOnce every 24 hours, a Healing roll with some sort of appropriate medicine removes one level of Fatigue for four hours. After that the Fatigue returns and can only be recovered with the addicting substance.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "hard_of_hearing",
+      "name": "Hard of Hearing",
+      "summary": "–4 to Notice sounds; automatic failure if completely deaf.",
+      "description": "Characters who have lost some or all of their hearing have this disadvantage. As a Minor Hindrance, it subtracts 4 from all Notice rolls made to hear, including awaking due to loud noises. A Major Hindrance means the character is deaf. She cannot hear and automatically fails all Notice rolls that depend on hearing. \n\nHearing aids reduce the penalty by 2, but require batteries and have a 50% chance of falling out when he’s Wounded, falls, or suffers some other trauma.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "heavy_sleeper",
+      "name": "Heavy Sleeper",
+      "summary": "-4 to Notice rolls to wake up from sleep.",
+      "description": "A thunderstorm from Hell itself doesn’t wake this Dozing Doolie. Once he drops off, he must make a Notice roll (−4) to wake up. He also suffers a −4 penalty to Vigor rolls made to stay awake.",
+      "type": "Minor",
+      "source": "Deadlands"
+    },
+    {
+      "id": "heroic",
+      "name": "Heroic",
+      "summary": "The character always helps those in need.",
+      "description": "This noble soul never says no to a person in need. She doesn’t have to be happy about it, but she always comes to the rescue of those she feels can’t help themselves. She’s the first one to run into a burning building, usually agrees to hunt monsters for little or no pay, and is generally a pushover for a sob story.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "hesitant",
+      "name": "Hesitant",
+      "summary": "Draw two Action Cards and take the lowest (except Jokers, which may be kept).",
+      "description": "Your hero hesitates in stressful situations. Draw two Action Cards in combat and act on the lowest. If you draw a Joker, use it normally and ignore the Hindrance for the round (hence this being a Minor Hindrance, it actually increases your chances of drawing a Joker!) \n\nHesitant characters cannot take the Quick or Level Headed Edges.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "illiterate",
+      "name": "Illiterate",
+      "summary": "The character cannot read or write.",
+      "description": "Your hero cannot read. He can sign his name and knows what a STOP sign says, but little else. He also doesn’t know much about math. He can probably do 2 + 2 = 4, but multiplication and the like are beyond him. Illiterate characters can’t read or write in any language, by the way, no matter how many they actually speak.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "impulsive",
+      "name": "Impulsive",
+      "summary": "The hero leaps before he looks.",
+      "description": "The daredevil almost always leaps before he looks. He rarely thinks things through before taking action.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "jealous",
+      "name": "Jealous",
+      "summary": "The individual covets what others have.",
+      "description": "Insecurity leads to envy of others’ accomplishments or being overly possessive of what this disgruntled soul feels belongs to him. He often complains, pouts, covets others’ possessions or accolades, claims credit for another’s work, disobeys commands, and generally causes problems. \n\nAs a Minor Hindrance, the character’s jealousy is focused on one particular subject (such as his “unrivaled” skill as a pilot or a romantic interest). \n\nAs a Major Hindrance, the character is jealous of anyone and everyone he feels outshines him. He consistently bad-mouths his rivals, tries to upstage them, or actively plots to discredit those who threaten his ego.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "loyal",
+      "name": "Loyal",
+      "summary": "The hero is loyal to his friends and allies.",
+      "description": "This stalwart defender risks her life for her friends without hesitation. Some Loyal heroes may not act that way, but are the first to come to their friends’ rescue when they’re threatened.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "lyin'_eyes",
+      "name": "Lyin' Eyes",
+      "summary": "-1 to Intimidation and Persuasion where lies are told. -1 to Gambling rolls.",
+      "description": "Lies just don’t come easy to this hombre. That sounds all good and noble, but often causes problems when dealing with more nefarious types. A hero with this Hindrance suffers a −1 penalty to all Intimidation and Persuasion rolls where lies—even little ones— must be told. \n\nWorse, if your hero plans to make money playing poker, the penalty also applies to bluffing. That’s −1 to your Gambling rolls in a poker or faro game as well, compadre!",
+      "type": "Minor",
+      "source": "Deadlands"
+    },
+    {
+      "id": "mean",
+      "name": "Mean",
+      "summary": "–1 to Persuasion rolls.",
+      "description": "This curmudgeon is ill-tempered and disagreeable. He has trouble doing anything kind for anyone else, must be paid for his troubles, and doesn’t accept awards or favors graciously. Besides the obvious roleplaying issues, Mean characters subtract 1 from Persuasion rolls.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "mild_mannered",
+      "name": "Mild Mannered",
+      "summary": "–1 to Intimidation rolls.",
+      "description": "Your milquetoast just isn’t threatening. Maybe he’s a little doughy around the middle, has a kind face, or a soft voice. Whatever the issue, he has a hard time looking tough. He subtracts 2 when making Intimidation rolls.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "mute",
+      "name": "Mute",
+      "summary": "The hero cannot speak.",
+      "description": "Due to trauma or birth, your character has lost the ability to speak. He can write messages to others when needed, use sign language, or some combination of visual communication. Vison-based communication may require a Notice roll to perceive correctly (illumination and similar penalties apply).",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "night_terrors",
+      "name": "Night Terrors",
+      "summary": "-1 to Spirit rolls.",
+      "description": "To say your hombre has bad dreams is a severe understatement. The Land of Nod is a constant nightmare. He tosses and turns like a demon on a rack, and likely keeps everyone within earshot of him awake with his nightly torment. The repeated barrage on his psyche results in an overall weakened resolve. He suffers a −1 penalty to all Spirit rolls.",
+      "type": "Major",
+      "source": "Deadlands"
+    },
+    {
+      "id": "obese",
+      "name": "Obese",
+      "summary": "Size +1, Pace –1 and running die of d4.",
+      "description": "Those who carry their weight well have the Brawny Edge. Those who don’t are Obese... A character cannot be both Brawny and Obese, and this Hindrance can’t increase your Size above +3. \n\nAn Obese hero’s Size (and therefore Toughness) increase by +1. His Pace is reduced by 1, and his running die one die type (minimum d4). Strength is considered one die type less (minimum d4) for armor and worn gear (not weapons). They may also have difficulty finding armor or clothing that fits or entering confined spaces.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "obligation",
+      "name": "Obligation",
+      "summary": "The character has a weekly obligation of 20 (Minor) to 40 (Major) hours.",
+      "description": "Your hero has a responsibility she must attend to on a daily or regular basis. It could be a job, volunteer work, taking care of family or friends, etc. \n\nThe Obligation consumes about 20 hours most weeks, or 40 + for the Major version. Exactly what that entails should be discussed between the player and the Game Master.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "old_ways_oath",
+      "name": "Old Ways Oath",
+      "summary": "Free reroll on Spirit rolls, but cannot use modern technology.",
+      "description": "Your hero has pledged to forego modern technology to honor the nature spirits. Those who remain true to their vows get a free reroll on any Spirit roll. \n\nIf the mortal violates the agreement, however, the spirits withdraw this advantage for 24 hours. If the oath-taker uses an item powered by ghost rock—a noxious and cancerous substance to nature spirits—their support is withdrawn for a week.",
+      "type": "Minor",
+      "source": "Deadlands"
+    },
+    {
+      "id": "one_arm",
+      "name": "One Arm",
+      "summary": "–4 to tasks (such as Athletics) that require two hands.",
+      "description": "By birth or battle, your hero has lost an arm. Fortunately, his other arm is (now) his “good” one. Tasks that require two hands, such as some Athletics rolls (GM’s call) or using a two-handed weapon, suffer a −4 modifier.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "one_eye",
+      "name": "One Eye",
+      "summary": "–2 to actions at 5” (10 yards) or more distance.",
+      "description": "This veteran lost an eye and has trouble with depth perception. He subtracts 2 from any Trait roll dependent on vision and more than 5″ (10 yards) distant.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "outsider",
+      "name": "Outsider",
+      "summary": "The character doesn’t fit in to the local environment and subtracts 1 from Persuasion rolls, or 2 as a Major Hindrance and has no legal rights or other serious consequences.",
+      "description": "In a society made up of only a few types of people, your hero isn’t one of them. A Native American in a Western town, an alien in a scifi game of human marines, or a half-orc in a party of elves, dwarves, and humans are all examples. Locals are likely to raise prices on her, ignore pleas for help, and generally treat her as lower class. \n\nOutsiders subtract 2 from Persuasion rolls made to influence those who aren’t her own kind. The Major version also means the character has few or no legal rights in the main campaign area. She might be a different species among xenophobes, the civilization may be cruel and unenlightened toward strangers, or she might even be an artificial intelligence whose sapience isn’t acknowledged by the law.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "overconfident",
+      "name": "Overconfident",
+      "summary": "The hero believes she can do anything.",
+      "description": "There’s nothing out there your hero can’t defeat. At least that’s what he thinks. He believes he can do most anything and never wants to retreat from a challenge. He’s not suicidal, but he certainly takes on more than common sense dictates.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "pacifist",
+      "name": "Pacifist",
+      "summary": "Fights only in self-defense as a Minor Hindrance, won’t fight at all as Major.",
+      "description": "Your hero absolutely despises violence. Minor pacifism means he only fights when given no other choice and never allows the killing of prisoners or other defenseless victims. \n\nMajor Pacifists won’t fight living characters under any circumstances. They may defend themselves, but won’t do anything to permanently harm sapient, living creatures. They may use nonlethal methods (see page 104), but only in self-defense or the defense of others. \n\nNote that undeniably evil creatures, undead, demons, and the like are fair game even for Major Pacifists!",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "phobia",
+      "name": "Phobia",
+      "summary": "The character is afraid of something, and subtracts –1/–2 from all Trait rolls in its presence.",
+      "description": "Phobias are overwhelming and irrational fears that plague a hero’s psyche. \n\nWhenever a character is in the presence of his phobia (GM’s call, but generally sight), he subtracts 1 from all his Trait rolls if it’s a Minor Hindrance, and 2 if it’s Major. \n\nPhobias shouldn’t be too obvious— everyone should be afraid of vampires, for example, so it’s not a phobia, it’s common sense. Instead, the phobia usually centers on some random element the mind associates with the event. Remember, phobias are <em>irrational</em> fears.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "poverty",
+      "name": "Poverty",
+      "summary": "Half starting funds and the character is always broke.",
+      "description": "It’s said a fool and his money are soon parted. Your hero is one of them. He starts with half the usual money for your setting and just can’t seem to hang on to funds acquired after play begins. In general, the player halves his total funds every game week.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "quirk",
+      "name": "Quirk",
+      "summary": "The individual has some minor but persistent foible that often annoys others.",
+      "description": "This individual has some minor foible that is usually humorous but can occasionally cause him real trouble. A swashbuckler may always try to slash his initials on his foes, a dwarf may brag constantly about his culture, or a snobby débutante might not eat, drink, or socialize with the lower class, for example.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "ruthless",
+      "name": "Ruthless",
+      "summary": "The character does what it takes to get her way.",
+      "description": "The fanatic will do most anything to accomplish her goals. As a Major Hindrance, she harms anyone and everyone who gets in her way. As a Minor Hindrance, she stops short of true harm to anyone except those who directly oppose her.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "secret",
+      "name": "Secret",
+      "summary": "The hero has a dark secret of some kind.",
+      "description": "Your hero has a secret she keeps to protect herself or others. As a Minor Hindrance, the secret is troublesome but not life-threatening. \n\nThe Major version would cause severe problems if discovered. If it ever becomes public knowledge, she should trade it for Enemy, Shamed, Wanted, or another appropriate Hindrance approved by the GM.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "shamed",
+      "name": "Shamed",
+      "summary": "The individual is haunted by some tragic event from her past.",
+      "description": "Something haunts your adventurer. Maybe he made a vow he didn’t keep. Maybe he was defeated in an honorable fight and ordered the death of his foe anyway for some greater principle. Maybe he isn’t actually cowardly but once ran from a battle and left others to die. \n\nAs a Minor Hindrance, the shameful circumstances aren’t generally known—it just haunts the hero. He might go out of his way, against all reason, not to repeat the mistake. Or he might give in to the same set of circumstances and hate himself for it. \n\nAs a Major Hindrance, his deed is well-known, or at least known among those he cares about. The other player characters should be told the tale as soon as possible (preferably at character creation). If not, it should be revealed by nonplayer characters at some point, and occasionally used against the hero.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "slow",
+      "name": "Slow",
+      "summary": "As Minor, Pace reduced by 1 and running die is a d4. As Major, Pace reduced by 2, running die is d4–1 (minimum 1), subtract 2 from Athletics and rolls to resist Athletics. May not take the Fleet-Footed Edge.",
+      "description": "A disability or past injury has hindered this hero’s mobility. As a Minor Hindrance, reduce his Pace by 1 and his running die one step (if already d4, reduce to d4 − 1). As a Major Hindrance, reduce the running die a step, Pace by 2, and subtract 2 from Athletics rolls and rolls to resist Athletics (such as Tests or Grappling). \nSlow characters may not take the Fleet-Footed Edge. \n\n-<strong>Prosthesis</strong>: A character with the Minor version of this Hindrance may have a prosthesis. If the prosthesis is lost, he suffers the effects of the Major version of Slow. \n\n-<strong>Wheelchairs</strong>: From about the Victorian era forward, Slow heroes may start with a manual wheelchair at no cost. In the modern era (1980s and on), the character may also choose from an ultralight or powered chair. \n\nAll wheelchairs require reasonably smooth ground to operate (GM’s call). \n<strong>MANUAL:</strong> Pace is half Athletics die (max of 3) and cannot run. \n<strong>ULTRALIGHT:</strong> Pace is half Athletics die and may run at d4 (Minor) or d4 − 1 (Major). \n<strong>POWERED:</strong> Pace 6 on flat, even ground, Pace 3 on uneven ground, cannot run. Most powered chairs can go about 10 miles before requiring a recharge",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "small",
+      "name": "Small",
+      "summary": "Size and Toughness are reduced by 1.",
+      "description": "This adventurer is very skinny, very short, or both. His <strong>Size</strong> (see page 106) is reduced by 1, which reduces his Toughness as well. \n\nSize can’t be reduced below −1, but the Toughness penalty remains. A Small half-folk, for example, remains Size −1 and loses a point of Toughness.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "stubborn",
+      "name": "Stubborn",
+      "summary": "The character wants his way and rarely admits his mistakes.",
+      "description": "Stubborn individuals always want their way and never admit they’re wrong. Even when it’s painfully obvious they’ve made a mistake they try to justify it with half-truths and rationalizations.",
+      "type": "Minor",
+      "source": "SWADE"
+    },
+    {
+      "id": "suspicious",
+      "name": "Suspicious",
+      "summary": "The individual is paranoid.",
+      "description": "Your character is suspicious of everyone. As a Minor Hindrance, his paranoia causes frequent trust issues. He might demand full payment before doing a task, want every agreement in writing, or believe even his friends are out to get him. \n\nAs a Major Hindrance, Support rolls to aid the distrustful individual are made at −2.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "talisman",
+      "name": "Talisman",
+      "summary": "Your magic is dependent on a physical item.",
+      "description": "Only characters with an Arcane Background Edge can take this Hindrance. It represents a mental dependence on a physical item to use their powers. Anyone who sees the item used to enact a power can tell it’s important. \n\nThe Talisman could be a specific deck of cards for a huckster, a medicine bag for a shaman, a holy item for a blessed, or a unique weapon for a chi master. Whatever the item, the character suffers a −1 penalty to all arcane skill rolls if she doesn’t have it on her person. As a Major Hindrance, she suffers a −2 without it. \n\nThe hero can replace a lost Talisman, but it takes two game weeks to acclimate to the replacement, during which time the hombre suffers the appropriate penalties. \n\nNote that mad scientists already need a chosen gizmo to enact powers—an actual dependence rather than a mental one. Therefore, characters with that Arcane Background aren’t eligible for this Hindrance.",
+      "type": "Minor/Major",
+      "source": "Deadlands"
+    },
+    {
+      "id": "tenderfoot",
+      "name": "Tenderfoot",
+      "summary": "Extra -1 penalty per Wound.",
+      "description": "Every little ol’ cut and scrape makes your cowpoke cry for mama. As long as he has at least one Wound, he suffers an additional −1 penalty to all his actions (so a hero with two Wounds would suffer a −3, for example, although −3 is still the maximum). A hero with this Hindrance can’t take the Don’t Get ’im Riled! Edge.",
+      "type": "Major",
+      "source": "Deadlands"
+    },
+    {
+      "id": "thin_skinned",
+      "name": "Thin Skinned",
+      "summary": "The character is particularly susceptible to personal attacks. As a Minor Hindrance, he subtracts two when resisting Taunt attacks. As a Major, he subtracts four.",
+      "description": "Personal attacks really get under this individual’s skin. As a Minor Hindrance, he subtracts 2 when resisting Taunt attacks. As a Major, he subtracts 4.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "tongue-tied",
+      "name": "Tongue-Tied",
+      "summary": "The character often misspeaks or can’t get her words out. –1 to Intimidation, Persuasion, and Taunt rolls.",
+      "description": "Your adventurer flubs cool lines (or thinks of them afterwards!), goes off on tangents when he’s trying to talk someone into something, and generally miscommunicates most everything he says. \n\nHe suffers a −1 penalty to Intimidation, Performance, Persuasion, and Taunt rolls that involve speech.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "trouble_magnet",
+      "name": "Trouble Magnet",
+      "summary": "On Critical Failures, the consequences are always worse for this hero.",
+      "description": "Things never go smoothly for this hero. As a Minor Hindrance, whenever the character rolls a Critical Failure the consequences are subtly worse in some way, as determined by the Marshal. A hero isn’t just spotted trying to infiltrate a US Army fort, someone recognizes her face. A buckaroo doesn’t just fail at Intimidation, the target also has friends. Or a botched attack roll results in the cowpoke’s weapon busting too. \n\nThe Major Hindrance has a different effect. Anytime the Marshal must choose a “random character” to be hit, attacked, or otherwise negatively affected by something—it’s this poor devil.",
+      "type": "Minor/Major",
+      "source": "Deadlands"
+    },
+    {
+      "id": "ugly",
+      "name": "Ugly",
+      "summary": "The character is physically unattractive and subtracts 1 or 2 from Persuasion rolls.",
+      "description": "Attractive people get all the breaks. This unfortunate individual isn’t one of them. He subtracts 1 from his Persuasion rolls, or 2 if taken as a Major Hindrance.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "vengeful",
+      "name": "Vengeful",
+      "summary": "The adventurer seeks payback for slights against her. As a Major Hindrance, she’ll cause physical harm to get it.",
+      "description": "Payback is…well…bad news for someone, and this adventurer is going to get it. \n\nAs a Minor Hindrance she usually seeks vengeance legally. The method varies by situation. Some plot and scheme for months while others demand immediate results. \n\nThose with the Major version of this Hindrance don’t let anything prevent them from a reckoning. This doesn’t mean they immediately resort to violence, but their actions always escalate until total and complete satisfaction is achieved",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "vow",
+      "name": "Vow",
+      "summary": "The individual has pledged himself to some cause.",
+      "description": "The character has sworn an oath to someone or something he believes in. The danger in fulfilling the Vow and how often it might occur determines the level of the Hindrance. \n\nA Minor Vow might be to serve an order with a broad mandate that rarely conflicts with the party’s goals. \n\nA Major Vow makes long-term and frequent demands on the servant’s time and results in great risks to his life.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "wanted",
+      "name": "Wanted",
+      "summary": "The character is wanted by the authorities.",
+      "description": "Your hero has committed some crime and will be arrested if discovered by the authorities. This assumes the setting actually has laws and police officers to enforce them. \n\nThe level of the Hindrance depends on how serious the crime was and how active the hunters are. A hero with numerous unpaid parking tickets (in a game where he might have to drive occasionally) has a Minor Hindrance, as does someone wanted for more serious crimes away from the main campaign area. Being accused of murder is a Major Hindrance in almost any setting if there’s someone around to seek justice (or vengeance).",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "summary": "–2 to Fear checks and resisting Intimidation.",
+      "description": "Not everyone has ice water in their veins. Your hero is squeamish at the sight of blood and gore and terrified of coming to harm. He subtracts 2 from Fear checks and when resisting Intimidation.",
+      "type": "Major",
+      "source": "SWADE"
+    },
+    {
+      "id": "young",
+      "name": "Young",
+      "summary": "Less skill points and in-game legal restrictions, but extra bennie(s).",
+      "description": "The hero is 12–15 years old (in human years—adjust this for other races). He has only 4 points to adjust his attributes instead of 5, and 10 skill points instead of 12. He may also have legal restrictions depending on the setting (can’t drive, own a firearm, and so on). \n\nOn the plus side, youths have a fair amount of luck. They draw one extra Benny at the beginning of each game session (this stacks with other Edges such Luck or Great Luck). \n\nMost Young characters should also take the Small Hindrance, but it’s not mandatory. \n\nAs a Major Hindrance, the character is Very Young (8 to 11 years old). He has only 3 points for attributes and 10 for skills, and the Small Hindrance. Very Young heroes draw two extra Bennies at the start of each session.",
+      "type": "Minor/Major",
+      "source": "SWADE"
+    }
+  ]
+}
