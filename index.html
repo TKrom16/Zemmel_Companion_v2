@@ -513,7 +513,7 @@ function renderPowers() {
       <div class="flex items-center gap-2"><span class="text-sm text-gray-600">${escapeHtml(p.rank || '')}</span>
       <button class="text-xl favbtn" type="button">${favorites.powers.has(String(p.id)) ? '⭐' : '☆'}</button></div></div>
       <div class="text-xs text-gray-700 mt-1 flex gap-2"><span>🔋 ${escapeHtml(p.power_points || '')}</span><span>📏 ${escapeHtml(p.range || '')}</span><span>🕑 ${escapeHtml(p.duration || '')}</span></div>
-      <p class="text-sm mt-2 summary-text">${escapeHtml(p.summary || '')}</p>`;
+      <p class="text-sm mt-2 summary-text">${renderHtmlAllowTags(p.summary || '')}</p>`;
     const favBtn = card.querySelector('.favbtn');
     favBtn.onclick = e => { e.stopPropagation(); toggleFavorite('powers', p.id); };
     card.onclick = () => openModal('powers', p);
@@ -540,7 +540,7 @@ function renderEdges() {
         <span class="font-semibold">${escapeHtml(e.name)}</span>
         ${e.rank ? `<span class="text-xs text-gray-600 mt-0.5">Rank: ${escapeHtml(e.rank)}</span>` : ''}
         ${e.requirements ? `<span class="text-xs italic text-red-700 mt-1 break-words">${escapeHtml(e.requirements)}</span>` : ''}
-        <p class="text-sm mt-2">${escapeHtml(e.summary || '')}</p>
+        <p class="text-sm mt-2">${renderHtmlAllowTags(e.summary || '')}</p>
       </div>
       <button class="text-xl favbtn mt-1" type="button">${favorites.edges.has(String(e.id)) ? '⭐' : '☆'}</button>
     </div>`;
@@ -573,7 +573,7 @@ function renderHindrances() {
     card.innerHTML = `<div class="flex justify-between items-center"><span class="font-semibold">${escapeHtml(h.name)}</span>
       <div class="flex items-center gap-2"><span class="text-sm text-gray-600">${escapeHtml(h.type || '')}</span>
       <button class="text-xl favbtn" type="button">${favorites.hindrances.has(String(h.id)) ? '⭐' : '☆'}</button></div></div>
-      <p class="text-sm mt-2 summary-text">${escapeHtml(h.summary || '')}</p>`;
+      <p class="text-sm mt-2 summary-text">${renderHtmlAllowTags(h.summary || '')}</p>`;
     const favBtn = card.querySelector('.favbtn');
     favBtn.onclick = ev => { ev.stopPropagation(); toggleFavorite('hindrances', h.id); };
     card.onclick = () => openModal('hindrances', h);
@@ -592,7 +592,7 @@ function renderTraits() {
     card.className = `border rounded p-3 ${highlightClass}`;
     card.innerHTML = `<div class="mb-1 font-semibold">${escapeHtml(t.name)}</div>
       <span class="trait-parent">${escapeHtml(t.parent || '')}</span>
-      <p class="text-sm mt-1 summary-text">${escapeHtml(t.description || '')}</p>`;
+      <p class="text-sm mt-1 summary-text">${renderHtmlAllowTags(t.description || '')}</p>`;
     itemsList.appendChild(card);
   });
 }
@@ -606,7 +606,7 @@ function openModal(kind, item) {
   if (kind === 'powers') modalStats.innerHTML = `<div>🔋 Power Points: ${escapeHtml(item.power_points || '')}</div><div>📏 Range: ${escapeHtml(item.range || '')}</div><div>🕑 Duration: ${escapeHtml(item.duration || '')}</div>`;
   else if (kind === 'edges') modalStats.innerHTML = `<div>Category: ${escapeHtml(item.category || '')}</div><div>Requirements: ${escapeHtml(item.requirements || '')}</div>`;
   else if (kind === 'hindrances') modalStats.innerHTML = `<div>Type: ${escapeHtml(item.type || '')}</div>`;
-  modalText.innerHTML = escapeHtml(item.full_text || item.description || item.summary || '');
+  modalText.innerHTML = renderHtmlAllowTags(item.full_text || item.description || item.summary || '');
   modalSource.textContent = item.source ? 'Source: ' + item.source : '';
   modalFavBtn.textContent = favorites[kind].has(String(item.id)) ? `⭐ Remove from My ${kind}` : `☆ Add to My ${kind}`;
   modalFavBtn.onclick = () => { toggleFavorite(kind, item.id); closeModal(); };
@@ -640,7 +640,7 @@ function renderCommonModifiers() {
   (data.common_modifiers || []).forEach(m => {
     commonModifiersList.insertAdjacentHTML('beforeend', `<div class="border rounded p-3 bg-gray-50 text-left">
       <p class="font-semibold text-red-700">▪ ${escapeHtml(m.name)} <span class="text-gray-800">(${escapeHtml(m.cost || '')})</span></p>
-      <p class="text-sm text-gray-800 ml-4">${escapeHtml(m.description || '')}</p>
+      <p class="text-sm text-gray-800 ml-4">${renderHtmlAllowTags(m.description || '')}</p>
     </div>`);
   });
 }
@@ -654,6 +654,18 @@ function escapeHtml(s) {
     .replace(/>/g,'&gt;')
     .replace(/"/g,'&quot;')
     .replace(/'/g,'&#039;');
+}
+
+// Allow only a tiny whitelist of inline tags: <strong>, <em>, <br>.
+// Escape everything first (using escapeHtml) then re-enable the allowed tags.
+// This keeps it safe (no <script>, no attributes), while letting simple formatting through.
+function renderHtmlAllowTags(s) {
+  if (s == null) return '';
+  const escaped = escapeHtml(s);
+  return escaped
+    .replace(/&lt;(\/?)strong&gt;/gi, '<$1strong>')
+    .replace(/&lt;(\/?)em&gt;/gi, '<$1em>')
+    .replace(/&lt;br\s*\/?&gt;/gi, '<br>');
 }
 
 /* init */
