@@ -7,11 +7,14 @@ const URLS_TO_CACHE = [
   './edges.json',
   './hindrances.json',
   './traits.json',
-  'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css',
-  'https://raw.githubusercontent.com/TKrom16/Zemmel_Companion_DL/main/Logo.png'
+  './icons/Logo.png',                  // local logo
+  './icons/icon-192.png',
+  './icons/icon-512.png',
+  './icons/icon-maskable.png',
+  'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
 ];
 
-// Install event: cache all resources
+// Install event: cache all files
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -20,10 +23,10 @@ self.addEventListener('install', event => {
   );
 });
 
-// Activate event: clean up old caches
+// Activate event: cleanup old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys => 
+    caches.keys().then(keys =>
       Promise.all(
         keys.map(key => {
           if (key !== CACHE_NAME) return caches.delete(key);
@@ -33,20 +36,23 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch event: serve from cache, fallback to network
+// Fetch event: respond with cache first, then network fallback
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(cachedResponse => {
-      return cachedResponse || fetch(event.request).then(fetchResponse => {
-        return caches.open(CACHE_NAME).then(cache => {
-          cache.put(event.request, fetchResponse.clone());
-          return fetchResponse;
-        });
-      }).catch(() => {
-        // Optional: fallback page if offline
-        if (event.request.mode === 'navigate') {
-          return caches.match('./');
+      if (cachedResponse) return cachedResponse;
+      return fetch(event.request).then(networkResponse => {
+        // Only cache GET requests
+        if (event.request.method === 'GET') {
+          return caches.open(CACHE_NAME).then(cache => {
+            cache.put(event.request, networkResponse.clone());
+            return networkResponse;
+          });
         }
+        return networkResponse;
+      }).catch(() => {
+        // Offline fallback for navigation requests
+        if (event.request.mode === 'navigate') return caches.match('./index.html');
       });
     })
   );
