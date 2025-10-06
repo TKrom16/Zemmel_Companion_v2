@@ -535,15 +535,20 @@ function renderEdges() {
   list.forEach(e => {
     const card = document.createElement('div');
     card.className = 'border rounded p-3 bg-white cursor-pointer hover:shadow';
-    card.innerHTML = `<div class="flex justify-between items-start">
-      <div class="flex flex-col">
-        <span class="font-semibold">${escapeHtml(e.name)}</span>
-        ${e.rank ? `<span class="text-xs text-gray-600 mt-0.5">Rank: ${escapeHtml(e.rank)}</span>` : ''}
-        ${e.requirements ? `<span class="text-xs italic text-red-700 mt-1 break-words">${escapeHtml(e.requirements)}</span>` : ''}
-        <p class="text-sm mt-2">${renderHtmlAllowTags(e.summary || '')}</p>
+    card.innerHTML = `
+      <div class="flex justify-between items-start">
+        <div class="flex flex-col">
+          <span class="font-semibold">${escapeHtml(e.name)}</span>
+          ${e.category ? `<span class="text-xs text-gray-600 mt-0.5">Category: ${escapeHtml(e.category)}</span>` : ''}
+          ${e.requirements ? `<span class="text-xs italic text-red-700 mt-1 break-words">Requirement: ${escapeHtml(e.requirements)}</span>` : ''}
+          <p class="text-sm mt-2">${renderHtmlAllowTags(e.summary || '')}</p>
+        </div>
+        <div class="flex flex-col items-end gap-1">
+          ${e.rank ? `<span class="text-sm text-gray-600">${escapeHtml(e.rank)}</span>` : ''}
+          <button class="text-xl favbtn" type="button">${favorites.edges.has(String(e.id)) ? '⭐' : '☆'}</button>
+        </div>
       </div>
-      <button class="text-xl favbtn mt-1" type="button">${favorites.edges.has(String(e.id)) ? '⭐' : '☆'}</button>
-    </div>`;
+    `;
     const favBtn = card.querySelector('.favbtn');
     favBtn.onclick = ev => { ev.stopPropagation(); toggleFavorite('edges', e.id); };
     card.onclick = () => openModal('edges', e);
