@@ -8,52 +8,45 @@ const URLS_TO_CACHE = [
   './hindrances.json',
   './traits.json',
   './icons/Logo.png',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
+  './icons/icon-maskable.png',
   'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
 ];
 
-// Install event: cache files
+// Install: pre-cache files
 self.addEventListener('install', event => {
   event.waitUntil(
-    (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      try {
-        await cache.addAll(URLS_TO_CACHE);
-        console.log('[SW] All resources cached');
-      } catch (err) {
-        console.warn('[SW] Some resources failed to cache:', err);
-      }
-      self.skipWaiting(); // Activate worker immediately
-    })()
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(URLS_TO_CACHE))
+      .then(() => self.skipWaiting())
+      .catch(err => console.error('Cache install failed:', err))
   );
 });
 
-// Activate event: take control of pages immediately
+// Activate: remove old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
-    (async () => {
-      const clientsList = await clients.claim();
-      console.log('[SW] Service Worker activated and controlling clients');
-    })()
+    caches.keys().then(keys =>
+      Promise.all(
+        keys.filter(key => key !== CACHE_NAME)
+            .map(key => caches.delete(key))
+      )
+    ).then(() => self.clients.claim())
   );
 });
 
-// Fetch event: respond with cache first, then network
+// Fetch: network first, fallback to cache
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(cachedResponse => {
-      if (cachedResponse) return cachedResponse;
-
-      return fetch(event.request)
-        .then(networkResponse => {
-          return caches.open(CACHE_NAME).then(cache => {
-            cache.put(event.request, networkResponse.clone());
-            return networkResponse;
-          });
-        })
-        .catch(err => {
-          console.warn('[SW] Fetch failed:', event.request.url, err);
-          throw err;
-        });
-    })
+    fetch(event.request)
+      .then(response => {
+        // Update cache with fresh response
+        if (event.request.method === 'GET') {
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, response.clone()));
+        }
+        return response;
+      })
+      .catch(() => caches.match(event.request)) // fallback to cache if offline
   );
 });
