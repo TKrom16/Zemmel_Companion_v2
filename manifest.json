@@ -1,7 +1,7 @@
 {
   "name": "Deadlands Companion",
   "short_name": "Deadlands",
-  "start_url": "./index.html",
+  "start_url": "./",           // Changed from ./index.html to ./ for GitHub Pages
   "display": "standalone",
   "background_color": "#FDEBC9",
   "theme_color": "#8B0000",
