@@ -85,7 +85,7 @@
       "requirements": "Spellcasting d4+, Spirit d8+",
       "rank": "Novice",
       "summary": "Become a witch or warlock drawing energy of Black Magic.",
-      "description": "Let’s be clear before we go any further. We’re not talking about wiccans, white witches, hedge mages, or other magic users who draw their power from nature, themselves, or anything good. Use the blessed or shamans for those who walk on the side of light. \n\nThis Arcane Background features witches and warlocks who draw energy straight out of the darkest part of the Hunting Grounds. “Black magic” is a quick and easy source of power for those who learn to take it, and it’s as tainted as week old meat. The Reckoners are happy to let mortals play with this power, even if they think they’re ultimately doing good with it, because eventually it corrupts even the strongest wills. See page 21-24 <em>Deadlands Companion</em>.",
+      "description": "Let’s be clear before we go any further. We’re not talking about wiccans, white witches, hedge mages, or other magic users who draw their power from nature, themselves, or anything good. Use the blessed or shamans for those who walk on the side of light. \n\nThis Arcane Background features Witches and warlocks who tap into dangerous, forbidden forces for their power. Their spells come easily, but such magic always exacts a price. “Black magic” is a quick and easy source of power for those who learn to take it, and it’s as tainted as week old meat. See page 21-24 <em>Deadlands Companion</em>.",
       "category": "Background",
       "source": "Deadlands Companion"
     },
@@ -278,16 +278,6 @@
       "description": "The player draws two extra Bennies instead of one at the start of each session.",
       "category": "Background",
       "source": "SWADE"
-    },
-    {
-      "id": "metal_mage",
-      "name": "Metal Mage",
-      "requirements": "Arcane background (Mad Scientist), Occult d6+, Weird Science d8+",
-      "rank": "Novice",
-      "summary": "Use devices like a mad scientist, but deal in power with otherworldy powers like a huckster.",
-      "description": "Metal mages use devices like any other weird scientist, but can also <strong>Deal with the Devil</strong> (see <em>Deadlands</em>) like a huckster! \n\nThis allows them to cast any power available to mad scientists, even those they don’t have or that are above their Rank, and perhaps even get enough energy directly from the Hunting Grounds to power it. \n\nThe process is similar to that of hucksters but with a few key differences—see the section on page 14 </em>Deadlands Companion> for all the details and differences. \n\nIt’s quite a spectacular show when a metal mage successfully Deals with the Devil! Metal bits swirl about the scientist, either appearing from thin air or levitating from whatever crates, bins, or toolkits are within a few feet of him. Unseen hands assemble the bits into a Hellish device or effect, twisting, shaping, turning and smashing pieces together in a storm of hot wind that smells of brimstone and madness. And if one looks closely, he just might see a demonic face howling with glee in the middle of the swirling metal maelstrom! \n\nThere’s no denying something super natural is happening when a metal mage deals with the Devil. Anyone who sees the event knows deviltry is afoot. Metal mages only resort to this measure as an absolute last resort when strangers are about. \n\nThe devilish devices created in this way last as long as the power itself lasts, then collapse into a pile of their component parts— often burning hot or icy cold from the touch of the demonic forces that assembled them. \n\nSee <em>Deadlands: The Weird West</em> for the <strong>Dealing with the Devil</strong> table, and the section on the page 14 <em>Deadlands Companion</em> for the process.",
-      "category": "Background",
-      "source": "Deadlands Companion"
     },
     {
       "id": "quick",
@@ -932,7 +922,7 @@
     {
       "id": "extra_effort",
       "name": "Extra Effort",
-      "requirements": "Arcane background (Gifted), Focus d6+",
+      "requirements": "Arcane background (Chi Master), Focus d6+",
       "rank": "Seasoned",
       "summary": "Increase Focus by +1 for 1 Power Point or +2 for 3 Power Points.",
       "description": "Some Gifted can dig deep into their souls to significantly boost their powers. \n\nExtra Effort increases a Focus total after it’s rolled by +1 for 1 Power Point, or +2 for 3 Power Points. It may not be used to improve a Critical Failure.",
@@ -952,7 +942,7 @@
     {
       "id": "holy/unholy_warrior",
       "name": "Holy/Unholy Warrior",
-      "requirements": "Arcane background (Miracles), Faith d6+",
+      "requirements": "Arcane background (Blessed/Shaman/Voodooist), Faith d6+",
       "rank": "Seasoned",
       "summary": "Add +1 to +4 to Soak rolls for each Power Point spent.",
       "description": "Believers face grave dangers in service to their divine patrons. To survive such hardships, the forces of good (or evil) grant miracles and the ability to turn their favor into supernatural protection. \n\nThe chosen may add +1 to the total of a final Soak roll for each Power Point spent, to a maximum of +4.",
@@ -1022,7 +1012,7 @@
     {
       "id": "wizard",
       "name": "Wizard",
-      "requirements": "Arcane background (magic), Spellcasting d6+",
+      "requirements": "Arcane background (Huckster), Spellcasting d6+",
       "rank": "Seasoned",
       "summary": "Spend 1 extra Power Point to change a spell’s Trapping.",
       "description": "Magic is varied and wonderful, and wizards are exposed to countless tomes, scrolls, and incantations as they master their craft. Sometimes they use this knowledge to recall variations of their various enchantments. \n\nA Wizard can spend 1 extra Power Point when casting a power to change its Trapping. A fireball (<em>blast</em>) might manifest as a lightning bolt, for example. This can often have important consequences if a foe has a particular resistance or weakness to the spell’s usual Trapping.",
@@ -1628,6 +1618,246 @@
       "description": "Increase the hero’s Parry an additional +1 and his Fighting bonus damage die is now a d10.",
       "category": "Legendary",
       "source": "SWADE"
+    },
+    {
+      "id": "agency_promotion",
+      "name": "Agency Promotion",
+      "requirements": "Agent Edge",
+      "rank": "Seasoned",
+      "summary": "The Agent gets promoted, which grants him bonuses.",
+      "description": "This Edge reflects a promotion by the Agency for your hero’s devotion, loyalty, and effectiveness. The first time it’s taken he becomes a Grade 1 Agent. This grants him a slight pay raise, the ability to spend higher Favors, and a light armored vest (or corset) if he chooses (see page 35). \n\nThe second time he takes this Edge he becomes a Grade 2 Agent. He gets another pay raise, the ability to call for greater Favors, and a special device (talk to GM). \n\nA player character can take this Edge one final time at Heroic Rank. This makes him a Grade 3 Agent and allows him to ask for 4-point Favors.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "man_of_a_thousand_faces",
+      "name": "Man of a Thousand Faces",
+      "requirements": "Agent Edge, Performance d8+",
+      "rank": "Seasoned",
+      "summary": "Breathe a cloud of noxious fumes.",
+      "description": "This Edge helps Agents infiltrate their foes, given some supplies and the ability to study the enemy. The Agent adds +2 to his Performance rolls when trying to impersonate a general “type” of roughly similar build. There’s a −2 penalty for impersonating someone the target has heard of, a −4 for someone the target has seen before, or −6 for a specific individual or someone the target is familiar with. Use of this Edge requires clothing appropriate for the role. A disguise kit (see page 27) removes 2 points of penalties.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "true_believer",
+      "name": "True Believer",
+      "requirements": "Arcane background (Blessed), Spirit d10+, Faith d6+",
+      "rank": "Novice",
+      "summary": "Free reroll on Faith rolls.",
+      "description": "This holy roller seems to have the ear of his deity. He gets a free reroll on Faith rolls.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "flock",
+      "name": "Flock",
+      "requirements": "Arcane background (Blessed), Persuasion d8+",
+      "rank": "Veteran",
+      "summary": "Gain five followers to serve at your side.",
+      "description": "The greatest prophets and preachers are attended by followers. These men and women have found salvation of one sort or another in the blessed, and devoted their lives to his cause. \n\nFlock gives your padre five followers who serve at his side in whatever capacity you choose. They have the stats of Townsfolk (see page 151), though like any other Allies they may <strong>Advance</strong> (see <em>Savage Worlds</em>). They come with nothing but the clothes on their back and a few dollars, but can be armed and outfitted however the blessed sees fit.\n\n Members of the Flock who perish are slowly replaced over time (usually by giving a “revival”). The Edge may not be taken more than once until the blessed is Legendary. At that point he may take it as many times as he likes (as well as the Followers Edge, if he so chooses).",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "superior_kung_fu",
+      "name": "Superior Kung Fu",
+      "requirements": "Arcane background (Chi Master), Spirit d6+, Fighting d8+",
+      "rank": "Novice",
+      "summary": "Gain a special kung fu fighting style.",
+      "description": "Through years of concentrated study under his wizened teacher, your hero has mastered several styles or stances that make up her particular practice of kung fu. \n\nChoose one of the options below the first time you take this Edge, and another each additional time you take it. \n\nAs a free action at the start of her turn, she can assume any one of the styles she’s taken below. The benefits of the style remain in place until she changes to a different one. \n\n-<strong>DRUNKEN STYLE:</strong> The fighter weaves around like she’s out of her tree on fire water, making her moves hard to follow or predict due to her staggering gait. Opponents subtract 2 from attack rolls to hit her, but her Pace is reduced by 2 (she may still run). \n\n-<strong>EAGLE CLAW:</strong> The warrior holds her hands like claws, then strikes quickly and viciously at the enemy like a pecking raptor. This gives her unarmed Fighting attacks AP 4, and it’s considered a Heavy Weapon! \nThis ability is critical for those chi masters who find themselves pitted against heavily armored foes! \n\n-<strong>MANTIS:</strong> A mantis stu dent holds her hands like hooks, moving from mesmerizing calm to startling strikes in a terrifying instant. \nOnce per round, anyone who fails a Fighting attack against the martial artist is Distracted or Vulnerable (martial artist’s choice). This is particularly effective when combined with the Counterattack Edge. \n\n<strong>MONKEY:</strong> The hero shakes her limbs like a primate, contorting and twisting in odd ways that throw off surrounding foes. \nThe martial artist gains +2 Parry, rapidly slapping and blocking away his foes’ strikes. She may also make an Athletics Test against all adjacent foes as a single action. Each one resists separately. \n\n-<strong>SHUAI CHAO:</strong> This form emphasizes light grappling techniques followed by throws or strikes. Once per round, when a foe fails a Fighting attack against the martial artist, she may make a grapple attempt as a free action (see Grappling in <em>Savage Worlds</em>). \n\n=<strong>TAN TUI:</strong> The chi master focuses her attack into a powerful snap kick—increasing her unarmed combat damage for one Fighting attack per round by one die type. If the attack causes the foe to be Shaken or Wounded, he’s also knocked back 1d4” with success, or 1d4+2” with a raise. With a successful Athletics roll, she can also rise from being prone without costing her the usual 2” of movement. \n\n<strong>WING CHUN:<strong> Wing Chun focuses on fast blocks and flexibility against attacks, like bamboo before a storm. This gives the warrior +1 Parry and subtracts 2 from any melee damage she takes while using this style.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "celestial_kung_fu",
+      "name": "Celestial Kung Fu",
+      "requirements": "Arcane background (Chi Master), Superior Kung Fu, Spirit d8+, Fighting d10+",
+      "rank": "Veteran",
+      "summary": "Gain a special kung fu fighting style + assume two stances at once.",
+      "description": "More options become available to a martial artist as she masters the mystical and physical aspects of her art. \n\nA hero with this Edge gains an additional style from Superior Kung Fu and may assume two styles at once using either or both options as she sees fit. She may change one or both as a free action at the start of her turn.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "hexslinging",
+      "name": "Hexslinging",
+      "requirements": "Arcane background (Huckster), Shooting d8+",
+      "rank": "Seasoned",
+      "summary": "Create your own rune-engraved hex gun to use some Powers.",
+      "description": "John Henry “Doc” Holliday was a huckster who learned the secrets of “rune magic,” a process the ancient Vikings used to enchant their weapons in days long past. He carved the runes on his favorite six-gun and “hexslinging” was born. Taking a cue from Hoyle, Doc passed those techniques on to his friends in a series of dime novels appropriately called <em>The Adventures of Doc Holliday</em>. \n\nHexslingers who learn Holliday’s secrets gain the <em>ammo whammy</em> power (page 75) and can create their own rune-engraved “hex guns.” This takes four hours per weapon, most of which is spent inscribing the barrel with various runes. The weapon can be any firearm—a pistol is common, but nothing stops a hero from making a hex gun out of a derringer or even a Gatling if she wants! \n\nOnce complete, any hexslinger can use that weapon to cast any of the following powers (assuming they have them) on or with the hex gun without incurring a Multi-Action penalty: <em>ammo whammy, deflection, boost Shooting</em>, and <em>protection</em>. \n\nThese spells have a Range of Self when cast in this way and can’t use the Additional Recipients modifier if they have it. Activation causes the runes on the weapon to glow subtly, throw sparks, or some similar effect.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "high_roller",
+      "name": "High Roller",
+      "requirements": "Arcane background (Huckster), Spirit d8+, Spellcasting d6+",
+      "rank": "Seasoned",
+      "summary": "Draw an extra card when Dealing for power.",
+      "description": "Go high or go home. Your hero draws an extra card anytime he Deals with the Devil (see page 65).",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+        {
+      "id": "improved_high_roller",
+      "name": "Improved High Roller",
+      "requirements": "Arcane background (Huckster), High Roller Edge",
+      "rank": "Veteran",
+      "summary": "Draw two extra cards when Dealing for power.",
+      "description": "Your inveterate gambler draws two extra cards (total) when Dealing with the Devil.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "old_hand",
+      "name": "Old Hand",
+      "requirements": "Arcane background (Huckster), Spellcasting d10+",
+      "rank": "Heroic",
+      "summary": "Draw two extra cards when Dealing for power.",
+      "description": "With knowledge comes power, and this huckster knows when to say when. After you form a five-card poker hand when Dealing with the Devil, you can discard up to three cards and redraw!",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "whateley_blood",
+      "name": "Whateley Blood",
+      "requirements": "Arcane background (Huckster / Witch)",
+      "rank": "Novice",
+      "summary": "Draw two extra cards when Dealing for power.",
+      "description": "Somewhere in your family tree is a crooked branch known as the Whateleys. This twisted family of inbred witches and warlocks is known by arcane types as being powerful—and extremely crazy. \n\nHucksters and Witches with Whateley spirit running through their veins have learned “blood magic.” Many of the Whateleys are deformed, although your hero doesn’t have to be (take the appropriate Hindrance if he is). All have some telltale mark—pale skin, jet-black hair, long fingernails, sallow complexion, and so on, and all have green eyes. \n\nWhatever mark you choose, there’s something about their tainted blood that puts folks off. That unsettled feeling reduces the huckster’s Persuasion rolls by 1, though many overcome it with other Edges taken separately (Attractive, Charismatic, etc.). \n\nNow for the meat of the Edge. A huckster with Whateley Blood can voluntarily suffer a Fatigue level for 5 Power Points, or a Wound for 10. This is done exactly as you’d think— by cutting, carving, or otherwise maiming themselves (as a free action, which makes it pretty messy!). Whateleys are a slippery bunch, so if this Incapacitates the caster he completes his turn before keeling over for a dirt nap.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy",
+      "requirements": "Arcane background (Mad Scientist), Weird Science d8+",
+      "rank": "Seasoned",
+      "summary": "Create potions and imbue them with bonuses.",
+      "description": "Weird scientists can already make potions, elixirs, tinctures, and the like depending on the Trappings of their powers. They can use them on others, but can’t “give” them to others unless they craft the item with the Artificer Edge (see Savage Worlds). \n\nThe Alchemy Edge is a bit of a cheat, allowing a character to create up to three potions or elixirs, investing a single Power Point in each. Creating the potions takes 30 minutes and $5 worth of various reagents each, and always includes at least a pinch of ghost rock. No Weird Science roll is made— creation is automatically successful, and creates any mix of the potions listed below. These can be given away freely and last for 24 hours. The scientist doesn’t get the Power Points back until they’re used, discarded, or expire. Drinking one potion is an action. \n\n-<strong>Snake Oil:</strong> The recipient makes a natural healing roll. Success heals one Wound and a raise heals two. \n\n-<strong>Focusing Elixir:</strong> Add +1 to any one Trait’s rolls (alchemist’s choice when created) for three rounds. \n\n-<strong>Peptonic:</strong> The recipient makes a Vigor roll. Success removes one level of Fatigue, and a raise removes two.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "iron_bound",
+      "name": "Iron Bound",
+      "requirements": "Arcane background (Mad Scientist)",
+      "rank": "Novice",
+      "summary": "Start with up to $2000 in infernal devices or vehicles",
+      "description": "Everyone has to learn their trade somewhere. Your mad scientist apprenticed to a master craftsman, or worked in a Hellstromme Industries factory, Smith & Robards workshop, or even one of the secret facilities belonging to the government. The alumni of these difficult and ground breaking trials in the New Science are said to be “Iron Bound.” \n\nYour hero managed to leave his former employment with some of the equipment he worked on, and still has a few friends who can cut him a special deal when he’s in a pinch. The mad scientist starts with up to $2,000 in infernal devices or vehicles (see page 33), and reduces the listed price of any future devices purchased through that source by 25%. He might be able to get discounts through other outlets by reciting some of his bona fides and sharing experiences with other inventors (Marshal’s call).",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "metal_mage",
+      "name": "Metal Mage",
+      "requirements": "Arcane background (Mad Scientist), Occult d6+, Weird Science d8+",
+      "rank": "Novice",
+      "summary": "Use devices like a mad scientist, but deal in power with otherworldy powers like a huckster.",
+      "description": "Metal mages use devices like any other weird scientist, but can also <strong>Deal with the Devil</strong> (see <em>Deadlands</em>) like a huckster! \n\nThis allows them to cast any power available to mad scientists, even those they don’t have or that are above their Rank, and perhaps even get enough energy directly from other planes to power it. \n\nThe process is similar to that of hucksters but with a few key differences—see the section on page 14 </em>Deadlands Companion> for all the details and differences. \n\nIt’s quite a spectacular show when a metal mage successfully Deals with the Devil! Metal bits swirl about the scientist, either appearing from thin air or levitating from whatever crates, bins, or toolkits are within a few feet of him. Unseen hands assemble the bits into a Hellish device or effect, twisting, shaping, turning and smashing pieces together in a storm of hot wind that smells of brimstone and madness. And if one looks closely, he just might see a demonic face howling with glee in the middle of the swirling metal maelstrom! \n\nThere’s no denying something super natural is happening when a metal mage deals with the Devil. Anyone who sees the event knows deviltry is afoot. Metal mages only resort to this measure as an absolute last resort when strangers are about. \n\nThe devilish devices created in this way last as long as the power itself lasts, then collapse into a pile of their component parts— often burning hot or icy cold from the touch of the demonic forces that assembled them. \n\nSee <em>Deadlands: The Weird West</em> for the <strong>Dealing with the Devil</strong> table, and the section on the page 14 <em>Deadlands Companion</em> for the process.",
+      "category": "Background",
+      "source": "Deadlands Companion"
+    },
+    {
+      "id": "ore_eater",
+      "name": "Ore Eater",
+      "requirements": "Arcane background (Mad Scientist), Weird Science d6+",
+      "rank": "Novice",
+      "summary": "Eat ghost rock for bonuses, but with a risk.",
+      "description": "Though your mad scientist probably doesn’t want anyone to know it, he’s developed a taste for ghost rock! Eating it raw isn’t really possible—it’s rock, after all— but it’s easy to powder or crush and sprinkle it into his favorite whiskey or spread it like salt over his vittles! \n\nThis is obviously a dangerous practice, but greatly increases the Weird Scientist’s connection to other planes. He gains 5 Power Points when this Edge is taken (in addition to any gained from the Power Points Edge). \n\nThe downside is that anytime he must roll on the <strong>Malfunction Table</strong> and rolls a 13, he gets ghost rock fever instead of the Gremlin result! He can only contract the fever once, and must live or die by the rules set forth under <strong>Ghost Rock Fever</strong> (GM's discretion!).",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "true_genius",
+      "name": "True Genius",
+      "requirements": "Arcane background (Mad Scientist), Smarts d8+",
+      "rank": "Novice",
+      "summary": "Spend bennies to make the GM reroll on the Madness or Malfunction Table",
+      "description": "Some say the New Science is inspired by supernatural entities. Most inventors call that superstitious poppycock, but a true genius not only accepts it, she embraces it! After all, it doesn’t matter where the idea comes from, it’s what you do with the technology that matters! Right? \n\nAnytime you have to use the <strong>Madness Table</strong> or infernal device <strong>Malfunction Table</strong>, you can spend a Benny to have the Marshal roll again, then choose the result you prefer. You may spend as many Bennies as you like until you’re out or as satisfied with the result as you’re gonna get!",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "fetish",
+      "name": "Fetish",
+      "requirements": "Arcane background (Shaman), Faith d8+",
+      "rank": "Novice",
+      "summary": "Gain a reroll on Faith rolls when carrying your fetish",
+      "description": "Fetishes are devices that help a shaman focus when he must contact the spirit world. It might be a stick figure that represents a favored animal, an icon of nature, or a rattle that helps draw the attention of the distant nature spirits. \n\nA shaman with a fetish gets one free reroll when she makes a Faith roll. Should a fetish be lost or destroyed, the shaman may create a replacement with a one-hour ritual.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "spirit's_favor",
+      "name": "Spirit's favor",
+      "requirements": "Arcane background (Shaman), Faith d8+",
+      "rank": "Seasoned",
+      "summary": "Choose a shaman power to cast without Multi-action penalty",
+      "description": "The shaman has gained the favor of a particular spirit and the singular power it grants her. \n\nChoose one of the shaman’s powers each time this Edge is taken. The shaman may cast that power as an action without incurring a Multi-Action penalty, allowing her to invoke protection, for example, then make an attack, pray for another blessing, or perform some other action. \n\nThe shaman may only claim this benefit once per turn, even if she takes Spirit’s Favor more than once.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "ranger_promotion",
+      "name": "Ranger Promotion",
+      "requirements": "Territorial Ranger Edge",
+      "rank": "Seasoned",
+      "summary": "Promote through the ranks of Territorial Ranger for bonuses.",
+      "description": "Your Ranger’s been promoted to Sergeant. He gets a slight increase in pay, a Gatling shotgun or rifle if he likes, and he can request higher Favors. \n\nYou can take this Edge a second time for a promotion to Lieutenant. This grants him access to the secret Chapter 13 of <em>Fugitives from Justice</em> (talk with the GM!), as well as a little extra dinero and the ability to request greater Favors. \n\nAt Heroic Rank, a Ranger can take this Edge one last time to gain promotion to Captain, granting him access to 4-point Favors.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "like_an_oak",
+      "name": "Like an Oak",
+      "requirements": "Territorial Ranger Edge, Grit Edge",
+      "rank": "Veteran",
+      "summary": "All allies within range negate up to two points of Fear penalties when making a Fear check.",
+      "description": "Few things settle the nerves of a posse like the sight of a Ranger standing toe-to-toe with some horrific abomination. \n\nAll allies within 12” of the Ranger negate up 2 points of Fear penalties when making a Fear check. If the Ranger fails his Fear check or is Shaken or Stunned, the allies do not get the benefit. If a group makes the check at the same time, the Ranger goes first.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "favored",
+      "name": "Favored",
+      "requirements": "Arcane background (Voodooist), Spirit d8+, Faith d8+",
+      "rank": "Seasoned",
+      "summary": "Reduce the cost of certain Voodooist spells.",
+      "description": "This Edge may only be taken once, and signifies a special relationship between a mambo or houngan and a particular loa. It only benefits those who have the <em>aspect of the rada loa</em> or <em>fury of the petro loa</em> spells. \n\nThe hero must plainly and visibly mark his or her allegiance to the chosen loa in some way—perhaps carrying a pet snake to signify a mambo’s “marriage” to Damballa, wearing black “mourning” clothes to honor Baron Samedi, and so on. \n\nAs long as this homage is present, either power costs 3 Power Points instead of 5.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "been_to_the_crossroads",
+      "name": "Been to the Crossroads",
+      "requirements": "Arcane background (Voodooist), Spirit d8+, Faith d8+",
+      "rank": "Novice",
+      "summary": "Free reroll on Faith rolls, but only after being Incapacitated at least once.",
+      "description": "This hero nearly died at some point but came back. He’s seen the crossroads between worlds, and the spirits hear his call better than most. \n\nThis Edge may only be taken after character creation. The character must have been Incapacitated due to an effect that could cause death (not getting enough sleep doesn’t count, amigo). Once the voodooist is no longer Incapacitated, either because he is healed or in other ways, he gets a free reroll on Faith rolls.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "familiar",
+      "name": "Familiar",
+      "requirements": "Arcane background (Witch), Spellcasting d8+",
+      "rank": "Novice",
+      "summary": "You have a small animal familiar.",
+      "description": "Your witch has a small (Size −3) creature that serves her. \n\nThe familiar has the Loyal Hindrance to its mistress but isn’t a slave. It acts like a typical but very smart version of its species and can occasionally be distracted by its own inherent instincts. A cat might interrupt its task to chase a mouse or take a brief nap and will most likely hide during combat. \n\nA familiar is a Wild Card with respect to Wounds and rolling a Wild Die with its Trait rolls. It doesn’t get Bennies, but the witch can spend her own on its behalf. The familiar can understand its mistress’s speech and vice-versa (others hear only the creature’s natural sounds). The bond between the familiar and its mistress makes it immune to the <em>beast friend</em> power. \n\nIf a familiar dies, the witch is automatically Stunned (no matter how far away it is). She can summon another after 13 days, and can change the type if she chooses. \n\nFamiliars do not advance as allies. Instead, a familiar has any one of the advantages below for each of the witch’s Ranks (including Novice) and for every fourth advance the witch gains past Legendary, gaining them as she advances or starting with them if she must replace a fallen pet. Only increasing a Trait or gaining an Edge may be taken more than once. \n\n-The witch can transfer Wounds and Fatigue to and from her familiar as a free action. \n-The witch can increase one of the familiar’s Traits one die type. This may only be taken once per Trait. \n-Your witch can use the familiar’s senses as if they were her own. This requires concentration and the maximum range for this ability is 10 miles. \n-The familiar gains an Edge. It must make sense for the familiar’s species and meet the Requirements as usual. \n-The familiar has 5 Power Points of its own. It cannot cast spells, but the witch can draw on them as if they were her own. They recharge separately and at the same rate as the witch’s.",
+      "category": "Archetype",
+      "source": "Deadlands"
+    },
+    {
+      "id": "familiar",
+      "name": "Familiar",
+      "requirements": "Arcane background (Witch), Spellcasting d8+",
+      "rank": "Novice",
+      "summary": "When dressed in Wichita Witch outfit, +1 to Persuasin and Intimidation. Also, imbue a whip with violent energy for power.",
+      "description": "Mina Devlin teaches her orphan girls reading, writing, arithmetic, etiquette, and of course, witchcraft! Her “girls” also learn how to defend themselves, intimidate the rough hired guns they often command, and of course, fight. \n\nThe trademark black mask, provocative leather outfit, and long whip mark the witch as one of Mina’s witches (whether the character is still with her or not). When fully decked out, she adds +1 to Intimidation rolls and +1 to Persuasion rolls to those who might be attracted to her. (She subtracts 1 from Persuasion rolls when dealing with authorities or “law and order” types— GM’s call). \n\nWichita witches also learn to charge their whip with violent energy. This costs one Power Point, is a free action, and can be triggered after the witch hits with the whip. If she hits with a raise and spends the Power Point, she can add a bonus die to the damage as usual (instead of only Entangling the foe— see Whips in <em>Deadlands: The Weird West<em>)",
+      "category": "Archetype",
+      "source": "Deadlands"
     }    
   ]
 }
