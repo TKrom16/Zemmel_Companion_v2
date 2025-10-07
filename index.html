@@ -516,24 +516,6 @@ function renderPowers() {
       <button class="text-xl favbtn" type="button">${favorites.powers.has(String(p.id)) ? '⭐' : '☆'}</button></div></div>
       <div class="text-xs text-gray-700 mt-1 flex gap-2"><span>🔋 ${escapeHtml(p.power_points || '')}</span><span>📐 ${escapeHtml(p.range || '')}</span><span>⏳ ${escapeHtml(p.duration || '')}</span></div>
       <p class="text-sm mt-2 summary-text">${renderHtmlAllowTags(p.summary || '')}</p>`;
-
-            // Modifiers
-      modalModifiers.innerHTML = "";
-      if (p.modifiers?.length) {
-        modalModifiersContainer.classList.remove("hidden");
-        p.modifiers.forEach(m => {
-          modalModifiers.insertAdjacentHTML("beforeend",
-            `<div class="border rounded bg-gray-50 p-3">
-               <p class="font-semibold text-red-700">
-                 ${m.name} <span class="text-gray-800">(${m.cost})</span>
-               </p>
-               <p class="text-sm text-gray-700 mt-1">${m.description}</p>
-             </div>`);
-        });
-      } else {
-        modalModifiersContainer.classList.add("hidden");
-      }
-      
     const favBtn = card.querySelector('.favbtn');
     favBtn.onclick = e => { e.stopPropagation(); toggleFavorite('powers', p.id); };
     card.onclick = () => openModal('powers', p);
@@ -628,9 +610,16 @@ function openModal(kind, item) {
   modalName.textContent = item.name || '';
   modalRank.textContent = item.rank ? 'Rank: ' + item.rank : item.type ? 'Type: ' + item.type : '';
   modalStats.innerHTML = '';
-  if (kind === 'powers') modalStats.innerHTML = `<div>🔋 Power Points: ${escapeHtml(item.power_points || '')}</div><div>📏 Range: ${escapeHtml(item.range || '')}</div><div>🕑 Duration: ${escapeHtml(item.duration || '')}</div>`;
-  else if (kind === 'edges') modalStats.innerHTML = `<div>Category: ${escapeHtml(item.category || '')}</div><div>Requirements: ${escapeHtml(item.requirements || '')}</div>`;
-  else if (kind === 'hindrances') modalStats.innerHTML = `<div>Type: ${escapeHtml(item.type || '')}</div>`;
+  if (kind === 'powers') {
+    modalStats.innerHTML = `<div>🔋 Power Points: ${escapeHtml(item.power_points || '')}</div>
+                            <div>📏 Range: ${escapeHtml(item.range || '')}</div>
+                            <div>🕑 Duration: ${escapeHtml(item.duration || '')}</div>`;
+  } else if (kind === 'edges') {
+    modalStats.innerHTML = `<div>Category: ${escapeHtml(item.category || '')}</div>
+                            <div>Requirements: ${escapeHtml(item.requirements || '')}</div>`;
+  } else if (kind === 'hindrances') {
+    modalStats.innerHTML = `<div>Type: ${escapeHtml(item.type || '')}</div>`;
+  }
   modalText.innerHTML = renderHtmlAllowTags(item.full_text || item.description || item.summary || '');
   modalSource.textContent = item.source ? 'Source: ' + item.source : '';
   modalFavBtn.textContent = favorites[kind].has(String(item.id)) ? `⭐ Remove from My ${kind}` : `☆ Add to My ${kind}`;
@@ -640,7 +629,6 @@ function openModal(kind, item) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text);
     } else {
-      // fallback: create temporary textarea
       const ta = document.createElement('textarea');
       ta.value = text;
       document.body.appendChild(ta);
@@ -651,6 +639,23 @@ function openModal(kind, item) {
     modalCopyBtn.textContent = 'Copied!';
     setTimeout(() => modalCopyBtn.textContent = 'Copy Summary', 1200);
   };
+
+  // --- Render modifiers for powers individually ---
+  modalModifiers.innerHTML = "";
+  if (kind === 'powers' && item.modifiers?.length) {
+    modalModifiersContainer.classList.remove("hidden");
+    item.modifiers.forEach(m => {
+      modalModifiers.insertAdjacentHTML("beforeend",
+        `<div class="border rounded bg-gray-50 p-3">
+           <p class="font-semibold text-red-700">
+             ${m.name} <span class="text-gray-800">(${m.cost})</span>
+           </p>
+           <p class="text-sm text-gray-700 mt-1">${m.description}</p>
+         </div>`);
+    });
+  } else {
+    modalModifiersContainer.classList.add("hidden");
+  }
 }
 
 function closeModal() { modal.classList.remove('open'); }
