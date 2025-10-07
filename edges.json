@@ -1634,7 +1634,7 @@
       "name": "Man of a Thousand Faces",
       "requirements": "Agent Edge, Performance d8+",
       "rank": "Seasoned",
-      "summary": "Breathe a cloud of noxious fumes.",
+      "summary": "+2 to Performance when impersonating someone.",
       "description": "This Edge helps Agents infiltrate their foes, given some supplies and the ability to study the enemy. The Agent adds +2 to his Performance rolls when trying to impersonate a general “type” of roughly similar build. There’s a −2 penalty for impersonating someone the target has heard of, a −4 for someone the target has seen before, or −6 for a specific individual or someone the target is familiar with. Use of this Edge requires clothing appropriate for the role. A disguise kit (see page 27) removes 2 points of penalties.",
       "category": "Archetype",
       "source": "Deadlands"
@@ -1850,8 +1850,8 @@
       "source": "Deadlands"
     },
     {
-      "id": "familiar",
-      "name": "Familiar",
+      "id": "wichita_witch",
+      "name": "Wichita Witch",
       "requirements": "Arcane background (Witch), Spellcasting d8+",
       "rank": "Novice",
       "summary": "When dressed in Wichita Witch outfit, +1 to Persuasin and Intimidation. Also, imbue a whip with violent energy for power.",
